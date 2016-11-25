@@ -1,5 +1,10 @@
 package main
 
+import "log"
+
 func main() {
-	startLoop()
+	err := startLoop()
+	if err != nil {
+		log.Fatal(err)
+	}
 }
